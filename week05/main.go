@@ -1,13 +1,14 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"strings"
+	"os"
 )
 
 func main() {
-	brokenWords := "I l?ve y?u"
-	replaceWords := strings.NewReplacer("?", "o")
-	fixedWords := replaceWords.Replace(brokenWords)
-	fmt.Println(fixedWords)
+	fmt.Print("Input score : ")
+	reader := bufio.NewReader(os.Stdin)
+	inputScore := reader.ReadString('\n')
+	fmt.Println(inputScore)
 }
