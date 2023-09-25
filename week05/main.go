@@ -33,7 +33,8 @@ func main() {
 			log.Fatal(err)
 		}
 		if inputNumber == answer {
-			fmt.Println("Gread U got the number! Congratulations") // right answer
+			fmt.Println("Great U got the number! Congratulations") // right answer
+			break
 		} else if inputNumber < answer {
 			fmt.Println("Ur guess number is lower than answer.") // answer is higher!
 		} else if inputNumber > answer {
