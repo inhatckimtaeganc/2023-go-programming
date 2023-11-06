@@ -33,4 +33,20 @@ func main() {
 		fmt.Println(prime)
 	}
 
+	for idx, _ := range primes {
+		fmt.Println(idx)
+	}
+
+	var sum int = 0
+	for _, prime := range primes {
+		//fmt.Println(prime)
+		sum = sum + prime
+	}
+	fmt.Println(sum)
+	//fmt.Println(float64(sum) / float64(len(primes)))
+	fmt.Printf("%.2f\n", float64(sum)/float64(len(primes)))
+
+	//primes[3] = 7 // index 범위 초과
+	//fmt.Println("Arrays")
+	//fmt.Println(primes[2])
 }
