@@ -20,4 +20,8 @@ func main() {
 		fmt.Println(test[i])
 		i++
 	}
+
+	for idx, prime := range primes {
+		fmt.Println(idx, prime)
+	}
 }
