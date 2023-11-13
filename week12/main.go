@@ -13,6 +13,8 @@ func main() {
 	fmt.Println(a, len(a), cap(a))
 	fmt.Println(c, len(c), cap(c))
 	as[1] = "z"
-	// fmt.Println(a, len(a), cap(a))
-	// fmt.Printf("%x %x %x\n", &a[0], &as[0], &a[1])
+	fmt.Printf("%x %x %x\n", &a[0], &as[0], &c[0])
+	c[0] = "Q"
+	fmt.Println(a, len(a), cap(a))
+	fmt.Println(c, len(c), cap(c))
 }
